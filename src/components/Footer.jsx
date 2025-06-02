@@ -113,7 +113,7 @@ const Footer = () => {
           className="border-t border-gray-800 mt-12 pt-8 text-center"
         >
           <p className="text-gray-400 text-sm">
-            © 2024 Recicla Óleo. Todos os direitos reservados. Desenvolvido com 💚 para um planeta melhor.
+            © 2025 RedLub Recioleo. Todos os direitos reservados. Desenvolvido por Difinity Labs.
           </p>
         </motion.div>
       </div>
