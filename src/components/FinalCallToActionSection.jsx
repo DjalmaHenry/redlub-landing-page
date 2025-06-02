@@ -17,7 +17,7 @@ const FinalCallToActionSection = () => {
             <Zap className="w-10 h-10 text-yellow-300" />
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            ✅ Pronto para fazer parte da mudança?
+            Pronto para fazer parte da mudança?
           </h2>
           <p className="text-xl lg:text-2xl mb-10 max-w-3xl mx-auto text-green-100 leading-relaxed">
             Sua atitude hoje garante um amanhã mais limpo e sustentável. Junte-se a nós nessa missão!

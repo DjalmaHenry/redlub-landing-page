@@ -1,24 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Facebook, Instagram, Linkedin, Mail, Phone, Recycle } from 'lucide-react';
+import { Instagram, Linkedin, Mail, Phone, Recycle } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' }
+    { icon: Instagram, href: 'https://www.instagram.com/redlub.recioleo/', label: 'Instagram' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/redlub-recioleo/', label: 'LinkedIn' }
   ];
 
-  const footerLinks = [
-    { text: 'Política de Privacidade', href: '#' },
-    { text: 'Termos de Uso', href: '#' },
-    { text: 'Contato', href: '#contact-form' }
-  ];
+  // const footerLinks = [
+  //   { text: 'Política de Privacidade', href: '#' },
+  //   { text: 'Termos de Uso', href: '#' },
+  //   { text: 'Contato', href: '#contact-form' }
+  // ];
 
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-col justify-between items-center gap-8 sm:flex-row">
           {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -31,7 +30,7 @@ const Footer = () => {
               <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center">
                 <Recycle className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-bold">Recicla Óleo</span>
+              <span className="text-2xl font-bold">RedLub Recioleo</span>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
               Transformando óleo usado em energia limpa. Cada gota reciclada é um passo em direção a um futuro mais sustentável para todos.
@@ -39,17 +38,17 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-300">
                 <Phone className="w-5 h-5 text-green-400" />
-                <span>(11) 9999-9999</span>
+                <span>(81) 3371-9497</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <Mail className="w-5 h-5 text-green-400" />
-                <span>contato@reciclaoleo.com.br</span>
+                <span>contato@redlub.com.br</span>
               </div>
             </div>
           </motion.div>
 
           {/* Links */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -68,7 +67,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </motion.div> */}
 
           {/* Social Media */}
           <motion.div
@@ -94,7 +93,7 @@ const Footer = () => {
             </div>
             
             {/* Environmental impact */}
-            <div className="mt-8 bg-green-900/30 rounded-lg p-4">
+            <div className="mt-8 w-80 bg-green-900/30 rounded-lg p-4">
               <span className="text-sm font-semibold text-green-400 block mb-2">
                 Impacto Ambiental
               </span>

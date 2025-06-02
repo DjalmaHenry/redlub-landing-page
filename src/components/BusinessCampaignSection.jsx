@@ -60,7 +60,7 @@ const BusinessCampaignSection = () => {
             <Building className="w-10 h-10 text-emerald-600" />
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 gradient-text">
-            🏢 Parceria Empresarial Sustentável
+            Parceria Empresarial Sustentável
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Transforme o resíduo da sua empresa em impacto positivo. Oferecemos coleta especializada e benefícios exclusivos.

@@ -19,7 +19,7 @@ const VideoSection = () => {
             <Youtube className="w-10 h-10 text-red-500" />
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 gradient-text">
-            🎥 Como é feita a coleta?
+            Como é feita a coleta?
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Assista ao vídeo e entenda o processo de coleta, o impacto no meio ambiente e como sua contribuição faz a diferença.

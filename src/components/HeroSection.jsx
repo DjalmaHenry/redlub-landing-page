@@ -23,7 +23,7 @@ const HeroSection = ({ onCtaClick }) => {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-14 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -35,10 +35,11 @@ const HeroSection = ({ onCtaClick }) => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl lg:text-7xl font-bold mb-6 leading-tight"
+              className="text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             >
-              Transforme seu óleo usado em{' '}
-              <span className="text-yellow-300">energia limpa</span>
+              Campanha de recilagem de{' '}
+              <span className="text-yellow-300">Óleo usado</span>
+              {' '}em frituras.
             </motion.h1>
             
             <motion.p

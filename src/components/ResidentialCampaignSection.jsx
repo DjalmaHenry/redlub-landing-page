@@ -18,7 +18,7 @@ const ResidentialCampaignSection = () => {
             <Home className="w-10 h-10 text-green-600" />
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 gradient-text">
-            🏠 Campanha de Coleta Residencial
+            Campanha de Coleta Residencial
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Sua contribuição em casa faz uma grande diferença para o meio ambiente. É simples, rápido e gratuito!

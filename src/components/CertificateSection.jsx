@@ -17,7 +17,7 @@ const CertificateSection = () => {
             <Award className="w-10 h-10 text-yellow-500" />
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 gradient-text">
-            🏅 Certificado de Coleta
+            Certificado de Coleta
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Reconheça o compromisso da sua empresa com o meio ambiente e a conformidade legal.
