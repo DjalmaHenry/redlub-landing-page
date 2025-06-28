@@ -49,7 +49,7 @@ const CertificateSection = () => {
                 colaborou com a destinação responsável de óleo de cozinha usado, em conformidade com as normas da Vigilância Sanitária.
               </p>
               <div className="border-t border-green-400 pt-6">
-                <p className="text-xl font-semibold text-yellow-300">RedLub Reciclagem</p>
+                <p className="text-xl font-semibold text-yellow-300">RedLub Recioleo</p>
                 <p className="text-sm text-green-200">Pernambuco, 2025</p>
               </div>
             </div>
