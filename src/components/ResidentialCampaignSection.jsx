@@ -78,7 +78,7 @@ const ResidentialCampaignSection = () => {
                 className="bg-green-500 hover:bg-green-600 text-white font-bold text-lg px-10 py-6 rounded-full pulse-green group transition-all duration-300 w-full sm:w-auto"
               >
                 <Send className="mr-2 w-5 h-5" />
-                Agendar coleta residencial no WhatsApp
+                Agendar coleta residencial
               </Button>
             </motion.a>
             <p className="mt-4 text-sm text-gray-500">

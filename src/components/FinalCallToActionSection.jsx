@@ -34,7 +34,7 @@ const FinalCallToActionSection = () => {
               className="bg-yellow-400 hover:bg-yellow-500 text-green-900 font-bold text-lg px-10 py-5 rounded-full pulse-green group transition-all duration-300 shadow-xl"
             >
               <Send className="mr-3 w-6 h-6" />
-              Falar com a RedLub no WhatsApp
+              Falar com a RedLub
             </Button>
           </motion.a>
         </motion.div>
