@@ -80,9 +80,9 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl hover-lift">
+            <div className="w-[calc(100%-10rem)] relative rounded-2xl overflow-hidden shadow-2xl hover-lift">
               <img  
-                className="w-full h-96 object-cover"
+                className="w-full h-auto object-cover"
                 alt="Recipiente de coleta de óleo de cozinha usado"
                 src="/principal_image.png" />
               <div className="absolute inset-0 bg-gradient-to-t from-green-900/50 to-transparent"></div>
@@ -93,7 +93,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 1 }}
-              className="absolute -top-4 -right-4 glass-effect rounded-xl p-4 text-center"
+              className="absolute top-2 right-24 glass-effect rounded-xl p-4 text-center"
             >
               <div className="text-2xl font-bold text-yellow-300">25.000L</div>
               <div className="text-sm text-white">água preservada</div>
