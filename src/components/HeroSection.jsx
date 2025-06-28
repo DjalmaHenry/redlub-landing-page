@@ -31,13 +31,92 @@ const HeroSection = () => {
             transition={{ duration: 0.8 }}
             className="text-left lg:text-left"
           >
+            {/* Logo com background de água em movimento */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="mb-4 relative inline-block"
+            >
+              {/* Container transparente com bordas animadas */}
+              <div className="relative">
+                {/* Fundo com leve transparência */}
+                <div className="absolute inset-0 bg-white/20 backdrop-blur-sm z-0"></div>
+                
+                {/* Bordas animadas - Superior */}
+                <motion.div 
+                  className="absolute top-0 left-0 right-0 h-[2px] z-1"
+                  style={{ background: 'linear-gradient(90deg, transparent, rgba(125, 211, 252, 0.8), transparent)' }}
+                  animate={{
+                    left: ['-100%', '100%', '-100%'],
+                  }}
+                  transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* Bordas animadas - Inferior */}
+                <motion.div 
+                  className="absolute bottom-0 left-0 right-0 h-[2px] z-1"
+                  style={{ background: 'linear-gradient(90deg, transparent, rgba(125, 211, 252, 0.8), transparent)' }}
+                  animate={{
+                    right: ['-100%', '100%', '-100%'],
+                  }}
+                  transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* Bordas animadas - Esquerda */}
+                <motion.div 
+                  className="absolute left-0 top-0 bottom-0 w-[2px] z-1"
+                  style={{ background: 'linear-gradient(180deg, transparent, rgba(125, 211, 252, 0.8), transparent)' }}
+                  animate={{
+                    top: ['-100%', '100%', '-100%'],
+                  }}
+                  transition={{
+                    duration: 10,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* Bordas animadas - Direita */}
+                <motion.div 
+                  className="absolute right-0 top-0 bottom-0 w-[2px] z-1"
+                  style={{ background: 'linear-gradient(180deg, transparent, rgba(125, 211, 252, 0.8), transparent)' }}
+                  animate={{
+                    bottom: ['-100%', '100%', '-100%'],
+                  }}
+                  transition={{
+                    duration: 10,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* Ícone Redlub */}
+                <div className="relative z-10 px-6 py-3">
+                  <img 
+                    src="/redlub_icon.png" 
+                    alt="Redlub Logo" 
+                    className="h-16 w-auto relative z-10"
+                  />
+                </div>
+              </div>
+            </motion.div>
+            
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             >
-              Campanha de recilagem de{' '}
+              Campanha de reciclagem de{' '}
               <span className="text-yellow-300">Óleo usado</span>
               {' '}em frituras.
             </motion.h1>
