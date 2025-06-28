@@ -26,8 +26,41 @@
   --radius: 0.75rem;
 }
 
+/* Prevenção de scroll horizontal e vertical indesejado */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   border-color: hsl(var(--border));
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Garantir que imagens e iframes não causem overflow */
+img, iframe, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Garantir que containers não causem overflow */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: max(1.5rem, env(safe-area-inset-left));
+  padding-right: max(1.5rem, env(safe-area-inset-right));
+}
+
+/* Remover overflow-x: hidden do container para evitar scroll interno */
+.container {
+  overflow-x: visible;
 }
 
 body {
@@ -80,12 +113,31 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
+/* Ajuste do padding das seções para evitar scroll interno */
 .section-padding {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 @media (max-width: 768px) {
   .section-padding {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
   }
+}
+
+@media (min-width: 1280px) {
+  .section-padding {
+    padding: 5rem 0;
+  }
+}
+
+/* Correção para cards e grids que podem estar causando overflow */
+.grid {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Garantir que cards não causem overflow */
+.card {
+  max-width: 100%;
+  overflow: hidden;
 }

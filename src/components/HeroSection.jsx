@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Droplets, Recycle } from 'lucide-react';
 
-const HeroSection = ({ onCtaClick }) => {
+const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient */}
@@ -57,14 +57,19 @@ const HeroSection = ({ onCtaClick }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Button
-                onClick={onCtaClick}
-                size="lg"
-                className="bg-yellow-400 hover:bg-yellow-500 text-green-900 font-bold text-lg px-8 py-4 rounded-full pulse-green group transition-all duration-300"
+              <a 
+                href="https://api.whatsapp.com/message/GBICHKHVYM4KK1"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Agende sua coleta gratuita agora
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+                <Button
+                  size="lg"
+                  className="bg-yellow-400 hover:bg-yellow-500 text-green-900 font-bold text-lg px-8 py-4 rounded-full pulse-green group transition-all duration-300"
+                >
+                  Agende sua coleta gratuita
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
             </motion.div>
           </motion.div>
 

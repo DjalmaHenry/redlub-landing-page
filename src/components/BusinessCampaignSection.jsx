@@ -160,9 +160,9 @@ const BusinessCampaignSection = () => {
             {/* Flowchart */}
             <div>
               <h4 className="text-xl font-semibold text-emerald-700 mb-4 text-center lg:text-left">Nosso Processo de Coleta:</h4>
-              <div className="space-y-4 relative pl-6">
+              <div className="space-y-6 relative pl-8">
                 {/* Vertical line */}
-                <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-emerald-300 ml-[7px]"></div>
+                <div className="absolute left-0 top-4 bottom-4 w-1 bg-gradient-to-b from-emerald-400 to-emerald-600 ml-4 rounded-full"></div>
                 
                 {flowchartSteps.map((step, index) => (
                   <motion.div
@@ -171,16 +171,19 @@ const BusinessCampaignSection = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.2 }}
                     viewport={{ once: true }}
-                    className="flex items-start space-x-3 relative"
+                    className="flex items-start space-x-4 relative"
                   >
                     <div className="flex-shrink-0 z-10">
-                      <div className="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center shadow-md -ml-[13px] mt-1 border-2 border-white">
-                        <step.icon className="w-4 h-4 text-white" />
+                      <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white absolute -left-8 top-1">
+                        <step.icon className="w-5 h-5 text-white" />
+                      </div>
+                      <div className="absolute -left-12 top-1 w-6 h-6 bg-white rounded-full flex items-center justify-center text-xs font-bold text-emerald-700 border border-emerald-200 shadow-sm">
+                        {index + 1}
                       </div>
                     </div>
-                    <div className="bg-white p-3 rounded-lg shadow-md flex-1 border border-emerald-100">
-                      <p className="font-semibold text-emerald-600 text-sm">{step.label}</p>
-                      <p className="text-xs text-gray-600">{step.description}</p>
+                    <div className="bg-white p-4 rounded-lg shadow-md flex-1 border border-emerald-100 hover:border-emerald-300 transition-all duration-300 hover:shadow-lg">
+                      <p className="font-semibold text-emerald-600 text-base mb-1">{step.label}</p>
+                      <p className="text-sm text-gray-600">{step.description}</p>
                     </div>
                   </motion.div>
                 ))}
