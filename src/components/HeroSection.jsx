@@ -84,7 +84,7 @@ const HeroSection = () => {
               <img  
                 className="w-full h-96 object-cover"
                 alt="Recipiente de coleta de óleo de cozinha usado"
-               src="https://images.unsplash.com/photo-1646152586935-1343e96bec7b" />
+                src="/principal_image.png" />
               <div className="absolute inset-0 bg-gradient-to-t from-green-900/50 to-transparent"></div>
             </div>
             
