@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const FloatingWhatsappButton = () => {
   return (
     <motion.a
-      href="https://api.whatsapp.com/message/GBICHKHVYM4KK1"
+      href="https://wa.me/5581988779497"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50"

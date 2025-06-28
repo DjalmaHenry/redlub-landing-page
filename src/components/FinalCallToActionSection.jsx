@@ -23,7 +23,7 @@ const FinalCallToActionSection = () => {
             Sua atitude hoje garante um amanhã mais limpo e sustentável. Junte-se a nós nessa missão!
           </p>
           <motion.a
-            href="https://api.whatsapp.com/message/GBICHKHVYM4KK1"
+            href="https://wa.me/5581988779497"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}

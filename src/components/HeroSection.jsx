@@ -87,7 +87,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <a 
-                href="https://api.whatsapp.com/message/GBICHKHVYM4KK1"
+                href="https://wa.me/5581988779497"
                 target="_blank"
                 rel="noopener noreferrer"
               >
