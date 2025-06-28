@@ -23,7 +23,7 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="grid lg:grid-cols-2 gap-14 items-center">
+        <div className="grid py-8 lg:py-0 lg:grid-cols-2 gap-14 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -38,76 +38,26 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="mb-4 relative inline-block"
             >
-              {/* Container transparente com bordas animadas */}
-              <div className="relative">
-                {/* Fundo com leve transparência */}
-                <div className="absolute inset-0 bg-white/20 backdrop-blur-sm z-0"></div>
-                
-                {/* Bordas animadas - Superior */}
-                <motion.div 
-                  className="absolute top-0 left-0 right-0 h-[2px] z-1"
-                  style={{ background: 'linear-gradient(90deg, transparent, rgba(125, 211, 252, 0.8), transparent)' }}
-                  animate={{
-                    left: ['-100%', '100%', '-100%'],
-                  }}
-                  transition={{
-                    duration: 8,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-                
-                {/* Bordas animadas - Inferior */}
-                <motion.div 
-                  className="absolute bottom-0 left-0 right-0 h-[2px] z-1"
-                  style={{ background: 'linear-gradient(90deg, transparent, rgba(125, 211, 252, 0.8), transparent)' }}
-                  animate={{
-                    right: ['-100%', '100%', '-100%'],
-                  }}
-                  transition={{
-                    duration: 8,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-                
-                {/* Bordas animadas - Esquerda */}
-                <motion.div 
-                  className="absolute left-0 top-0 bottom-0 w-[2px] z-1"
-                  style={{ background: 'linear-gradient(180deg, transparent, rgba(125, 211, 252, 0.8), transparent)' }}
-                  animate={{
-                    top: ['-100%', '100%', '-100%'],
-                  }}
-                  transition={{
-                    duration: 10,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-                
-                {/* Bordas animadas - Direita */}
-                <motion.div 
-                  className="absolute right-0 top-0 bottom-0 w-[2px] z-1"
-                  style={{ background: 'linear-gradient(180deg, transparent, rgba(125, 211, 252, 0.8), transparent)' }}
-                  animate={{
-                    bottom: ['-100%', '100%', '-100%'],
-                  }}
-                  transition={{
-                    duration: 10,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-                
+              {/* Logo com brilho estático */}
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+                className="relative"
+              >
                 {/* Ícone Redlub */}
-                <div className="relative z-10 px-6 py-3">
+                <div className="relative z-10 px-2 py-2">
                   <img 
                     src="/redlub_icon.png" 
                     alt="Redlub Logo" 
                     className="h-16 w-auto relative z-10"
+                    style={{
+                      filter: 'drop-shadow(0 0 6px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 12px rgba(255, 255, 255, 0.4))',
+                      transition: 'filter 0.3s ease'
+                    }}
                   />
                 </div>
-              </div>
+              </motion.div>
             </motion.div>
             
             <motion.h1
