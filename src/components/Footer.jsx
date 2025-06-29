@@ -8,12 +8,6 @@ const Footer = () => {
     { icon: Linkedin, href: 'https://www.linkedin.com/company/redlub-recioleo/', label: 'LinkedIn' }
   ];
 
-  // const footerLinks = [
-  //   { text: 'Política de Privacidade', href: '#' },
-  //   { text: 'Termos de Uso', href: '#' },
-  //   { text: 'Contato', href: '#contact-form' }
-  // ];
-
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
