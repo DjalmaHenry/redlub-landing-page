@@ -33,12 +33,12 @@ const Footer = () => {
               <span className="text-2xl font-bold">RedLub Recioleo</span>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-              Transformando óleo usado em energia limpa. Cada gota reciclada é um passo em direção a um futuro mais sustentável para todos.
+              Cada gota de óleo reciclado é um passo em direção a um futuro mais sustentável para todos.
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-300">
                 <Phone className="w-5 h-5 text-green-400" />
-                <span>(81) 3371-9497</span>
+                <span>(81) 98877-9497</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <Mail className="w-5 h-5 text-green-400" />
